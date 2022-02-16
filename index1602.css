@@ -1,0 +1,20 @@
+* {margin: 0;
+    padding: 0;
+    line-height: 2;}
+
+h1 {text-align: center;
+    color: blue;}
+
+
+.contenair {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;}
+
+.carre {background-color: aquamarine;
+        width: 200px;
+        height: 200px;
+        text-align: center;}
+
