@@ -1,0 +1,28 @@
+* {margin: 0;
+    padding: 0;}
+
+body {background-color: lightgrey}
+
+header {background-image: url(./3d-hexagons-4k-hexagons-3d-texture-hexagons-patterns-hexagons-textures-besthqwallpapers.com-1536x864.jpg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;}
+
+#menu {display: none;}
+
+#menu:target {display: block;}
+
+.img1 {border-radius: 30%;}
+
+button {background-color: rgb(141, 133, 133);
+        width: 150px;
+        height: 50px;
+        border-radius: 40%;
+        border: none;
+        font-size: medium;
+        opacity: 0.4;
+        color: blue;}
+
+
+@media   (min-width : 750px) {  
+    button {color : orange}}

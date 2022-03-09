@@ -1,0 +1,12 @@
+* {margin: 0;
+   padding: 0;
+   background-color: lightgreen;
+   line-height: 3;}
+
+h1 {text-align: center;}
+
+button {width: 100px;
+        height: 30px;
+        background-color :lightblue;}
+
+ul {text-align: center;}

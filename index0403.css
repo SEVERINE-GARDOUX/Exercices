@@ -1,0 +1,14 @@
+.contenair {display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         justify-items: center;}
+
+p {width: 50%;
+  height: 150px;
+  background-color: cornflowerblue;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.color {background-color: orange;
+        border-radius: 45%;}
