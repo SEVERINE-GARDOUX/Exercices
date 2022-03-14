@@ -1,0 +1,80 @@
+
+
+.wave {background: url(https://acegif.com/wp-content/gifs/fire-13.gif);
+      position: absolute;
+      top: 220px;
+      width: 6400px;
+      height: 350px;
+      animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+      transform: translate3d(0, 0, 0);}
+
+.wave:nth-of-type(2) {top: -215px;
+                      animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+                      opacity: 1;}
+
+@keyframes wave {
+  0% {margin-left: 0;}
+  100% {margin-left: -1600px;}
+}
+
+@keyframes swell { 0%, 
+  100% {transform: translate3d(0,-25px,0);}
+  50% {transform: translate3d(0,5px,0);}
+}
+
+/*mais*/
+
+body {overflow: hidden;}
+
+.anim{position: relative;
+  z-index: -1; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 800px;}
+
+.graine1 {position: absolute;
+          animation-delay: 1.5s;
+          animation-name: anim;
+          animation: anim  2s linear infinite ;
+          font-size: 50px;
+          left: 1280px;}
+
+.graine2 {position: absolute;
+        animation-delay: 2s;
+        animation-name: anim;
+        animation: anim  2.2s linear infinite ;
+        font-size: 80px;
+        left: 200px;}
+
+.graine3{position: absolute;
+        animation-delay: 2s;
+        animation-name: anim;
+        animation: anim  2.5s linear infinite;
+        font-size: 60px;
+        left: 300px;}       
+
+.graine4 {position: absolute;
+          animation-delay: 2s;
+          animation-name: anim;
+          animation: anim  2.8s linear infinite;
+          font-size: 120px;
+          left: 400px;}
+
+.graine5{position: absolute;
+        animation-delay: 2s;
+        animation-name: anim;
+        animation: anim  2s linear infinite;
+        font-size: 70px;
+        left: 500px;}
+
+@keyframes anim {
+  0% {transform : translateY(0px) rotate(0deg);
+      opacity: 1;}
+  100% {transform: translateY(-450px) rotate(360deg);
+        opacity : 0;}
+}
+
+/*Popcorn*/
+
+
