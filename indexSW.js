@@ -1,16 +1,36 @@
 document.body.style.backgroundColor = 'lightgrey '
-document.body.style.textAlign = 'center'
 
-async function fetchSw () {
-    const response = await fetch ('https://swapi.dev/api/people');
-    const perso = await response.json (); 
-    console.log (perso) 
-    persoSw (StarWarsPersos)
+
+async function fetchSW () {
+    const reponse = await fetch ('https://swapi.dev/api/people');
+    const perso = await reponse.json (); 
+    console.log (perso)  //ok je vois bien les données
+    persoSW (perso.results)
 } 
-fetchSw ()
+fetchSW ()
 
-function persoSw (StarWarsPersos) {
-    for (perso of persos)
-    document.querySelector ('ul').innerHTML +=  `
-    <li> ${results.name} </li>`
+function persoSW (arrayPerso) {
+    for (personnages of arrayPerso)
+    document.querySelector ('.name').innerHTML +=  ` <p>
+    <h3>${personnages.name}</h3>
+    <p>Est né(e) :${personnages.birth_year}</p>
+    <p> A les yeux : ${personnages.eye_color}</p>
+</p>
+    `
 }
+
+// fetch ('https://swapi.dev/api/people')
+// .then (response => response.json())
+// .then (persos => {
+
+//     for (perso of persos) {
+//         displayHTML ('perso.name, perso.birth_year')
+//     }
+// })
+
+// function displayHTML (selector, name, birth_year) {
+//     document.querySelector.innerHTML += `
+//     <ul>
+//         <li></li>
+//     </ul>  `
+// }
