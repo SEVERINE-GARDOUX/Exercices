@@ -29,7 +29,7 @@ function persoSW (arrayPerso) {
 // })
 
 // function displayHTML (selector, name, birth_year) {
-//     document.querySelector.innerHTML += `
+//     document.querySelector(selector).innerHTML += `
 //     <ul>
 //         <li></li>
 //     </ul>  `
