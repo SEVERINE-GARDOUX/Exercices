@@ -18,19 +18,3 @@ function persoSW (arrayPerso) {
 </p>
     `
 }
-
-// fetch ('https://swapi.dev/api/people')
-// .then (response => response.json())
-// .then (persos => {
-
-//     for (perso of persos) {
-//         displayHTML ('perso.name, perso.birth_year')
-//     }
-// })
-
-// function displayHTML (selector, name, birth_year) {
-//     document.querySelector(selector).innerHTML += `
-//     <ul>
-//         <li></li>
-//     </ul>  `
-// }
